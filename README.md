@@ -1,18 +1,31 @@
-# Getting Started with Create React App
+# Netflix clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built a netflix clone using React.js,firebase for hosting and The Movie Database API (tmdb).\
+Hosted on https://netflix-clone-a1ea1.web.app
 
-## Available Scripts
+## Description
+The App includes a variety of genres; Netflix originals, Trending Now, Action, Comedy, Horror, Romance and Documentaries. It also includes the ability of scroll smoothly through various genres exploring each genere without leaving the homepage.
 
-In the project directory, you can run:
+## Starting the App
+#### `npm install`
+To install all the dependencies and packages found in package.json\
+#### `npm start`
+To run the app in the development mode.\
 
-### `npm start`
+## Hosting the App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### `firebase login`
+#### `firebase init`
+1. Select option Hosting: Configure and deploy Firebase Hosting sites.\
+2. Select Use an existing project, and in that select Firebase project name.\
+3. Type in 'build' to be used for public directory\
+4. For Configure as a single-page app question enter y for this option.\
+5. Select N for overwriting index.html and copy paste the main index.html file into the new index.html.\
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### `firebase deploy`
+
+
+## Other Available Scripts
 
 ### `npm test`
 
