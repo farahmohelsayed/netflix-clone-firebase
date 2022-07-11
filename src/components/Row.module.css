@@ -1,0 +1,36 @@
+.row{
+    margin-left: 20px;
+}
+.rowTitle{
+    margin-top: 10px;
+    color: #fff;
+}
+.rowPosters{
+    display: flex;
+    /* To allow scrolling of movies without scrolling the whole page*/
+    overflow-y: hidden;
+    overflow-x: scroll; /*add scroll on x axis*/
+    padding: 20px; /* because when it scales up we could still see it*/
+}
+.rowPoster{
+    /* preserves the aspect ratio */
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.rowPosters::-webkit-scrollbar{
+    /*remove scrollbar for all browswers but keep the functionality of it*/
+    display: none;
+}
+.rowPoster:hover{
+    /* combined with the transition above to slow down the scale when hovered on */
+    transform: scale(1.08);
+}
+.rowPostersLarge{
+    max-height: 250px;
+}
+.rowPostersLarge:hover{
+    transform: scale(1.09);
+}
